@@ -1,8 +1,8 @@
 import "./Button.css";
-export const Button = () => {
+export const Button = (props) => {
 	return (
 		<button className="botao">
-			<p>Criar card</p>
+			{props.children}
 		</button>
 	);
 };
