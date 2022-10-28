@@ -1,5 +1,4 @@
 import Banner from "./componentes/Banner";
-import CampoTexto from "./componentes/CampoTexto";
 import Form from "./componentes/Form";
 
 function App() {
