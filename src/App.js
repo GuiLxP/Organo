@@ -8,7 +8,6 @@ function App() {
 		console.log(colaborador)
 	}
 
- 
 	return (
 		<div className="App">
 			<Banner />
