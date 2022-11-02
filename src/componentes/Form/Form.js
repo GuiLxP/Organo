@@ -4,7 +4,7 @@ import Button from "../Button";
 import ListaSuspensa from "../ListaSuspensa";
 import { useState } from "react";
 
-export const Form = () => {
+export const Form = (props) => {
 	const times = [
 		"Programação",
 		"Front-End",
@@ -22,7 +22,12 @@ export const Form = () => {
 
 	const aoSalvar = (evento) => {
 		evento.preventDefault();
-		console.log("Form foi submetido", nome, cargo, imagem, time);
+		props.aoColaboradorCadastrado({
+			nome,
+			cargo,
+			imagem,
+			time,
+		});
 	};
 
 	return (
@@ -52,7 +57,7 @@ export const Form = () => {
 				<ListaSuspensa
 					obrigatorio={true}
 					label="Time"
-					item={times}
+					itens={times}
 					valor={time}
 					aoAlterar={(valor) => setTime(valor)}
 				/>

@@ -3,16 +3,20 @@ import Banner from "./componentes/Banner";
 import Form from "./componentes/Form";
 
 function App() {
-	const [colaboradores, setColaboradores] = useState([])
-	const aoNovoColaboradorAdicionado= (colaborador) => {
-		console.log(colaborador)
-	}
+	const [colaboradores, setColaboradores] = useState([]);
+	const aoNovoColaboradorAdicionado = (colaborador) => {
+		console.log(colaborador);
+		setColaboradores([...colaboradores, colaborador]);
+	};
 
- 
 	return (
 		<div className="App">
 			<Banner />
-			<Form aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador) }/>
+			<Form
+				aoColaboradorCadastrado={(colaborador) =>
+					aoNovoColaboradorAdicionado(colaborador)
+				}
+			/>
 		</div>
 	);
 }
