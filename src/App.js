@@ -8,7 +8,7 @@ function App() {
 		console.log(colaborador);
 		setColaboradores([...colaboradores, colaborador]);
 	};
-
+//
 	return (
 		<div className="App">
 			<Banner />
