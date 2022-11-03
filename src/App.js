@@ -56,10 +56,15 @@ function App() {
 					aoNovoColaboradorAdicionado(colaborador)
 				}
 			/>
-			<Time nome="Programação" />
-			<Time nome="Front-End" />
-			<Time nome="Data Science" />
-			<Time nome="Devops" />
+
+			{times.map((time) => (
+				<Time
+					key={time.nome}
+					nome={time.nome}
+					corPrimaria={time.corPrimaria}
+					corSecundaria={time.corSecundaria}
+				/>
+			))}
 		</div>
 	);
 }
