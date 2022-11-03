@@ -5,16 +5,6 @@ import ListaSuspensa from "../ListaSuspensa";
 import { useState } from "react";
 
 export const Form = (props) => {
-	const times = [
-		"Programação",
-		"Front-End",
-		"Data Science",
-		"DevOps",
-		"Ux e Design",
-		"Mobile",
-		"Inovação e Gestão",
-	];
-
 	const [nome, setNome] = useState("");
 	const [cargo, setCargo] = useState("");
 	const [imagem, setImagem] = useState("");
@@ -57,7 +47,7 @@ export const Form = (props) => {
 				<ListaSuspensa
 					obrigatorio={true}
 					label="Time"
-					itens={times}
+					itens={props.times}
 					valor={time}
 					aoAlterar={(valor) => setTime(valor)}
 				/>

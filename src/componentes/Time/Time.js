@@ -1,3 +1,4 @@
+import { Colaborador } from "../Colaborador/Colaborador";
 import "./Time.css";
 export const Time = (props) => {
 	return (
@@ -5,6 +6,7 @@ export const Time = (props) => {
 			className="time"
 			style={{ backgroundColor: props.corSecundaria }}>
 			<h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
+			<Colaborador />
 		</section>
 	);
 };

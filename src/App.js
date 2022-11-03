@@ -55,6 +55,7 @@ function App() {
 				aoColaboradorCadastrado={(colaborador) =>
 					aoNovoColaboradorAdicionado(colaborador)
 				}
+				times={times.map((time) => time.nome)}
 			/>
 
 			{times.map((time) => (
