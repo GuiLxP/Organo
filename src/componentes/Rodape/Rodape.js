@@ -24,7 +24,7 @@ export const Rodape = () => {
 				<img src="/assets/logo.png" alt="" />
 			</section>
 			<section>
-				<p>Desenvolvido por Alura.</p>
+				<p>Desenvolvido por Guilherme Pantoja.</p>
 			</section>
 		</footer>
 	);
